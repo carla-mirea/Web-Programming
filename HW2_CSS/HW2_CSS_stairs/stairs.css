@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stairs {
+    perspective: 1000px; /*how far the object is (in 3D space) (the depth)*/
+    width: 100%;
+}
+
+.step {
+    width: 200px;
+    height: 50px;
+    background-color: #333;
+    margin-bottom: 2px;
+    transform-origin: left bottom; /*the point around which a transformation is applied to an element*/
+    transform-style: preserve-3d; /*the children should be rendered in their own 3D space*/
+    /* transition: transform 0.5s ease; */
+    /* box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5); */ /*horizonal and vertical offsets, blur radius, color and transparency radius*/
+}
+
+.step:nth-child(odd) {
+    background-color: #555;
+}
+
+.step-5 {
+    transform: translateX(400px);
+    box-shadow: 25px 50px 20px rgba(0, 0, 0, 0.5);
+}
+
+.step-4 {
+    transform: translateX(300px);
+    box-shadow: 20px 40px 20px rgba(0, 0, 0, 0.5);
+}
+
+.step-3 {
+    transform: translateX(200px);
+    box-shadow: 15px 30px 20px rgba(0, 0, 0, 0.5);
+}
+
+.step-2 {
+    transform: translateX(100px); /*moves on X-axis with 100px to right*/
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.step-1 {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+}

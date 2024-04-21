@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    background-color: #edf5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.collapsible-table {
+    border-collapse: collapse;
+    width: 400px;
+
+    transition: height 20s ease; /* when height changes, ease is also by default (slow fast slow)*/
+}
+
+.collapsible-table th,
+.collapsible-table td {
+    border: 0px;
+    padding: 8px;
+}
+
+.collapsible-table th {
+    background-color: #71abaa;
+    color: white;
+}
+
+tbody {
+    background-color: white;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+table:hover tbody {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: #edf5f5;
+}

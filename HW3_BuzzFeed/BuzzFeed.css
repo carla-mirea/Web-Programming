@@ -1,0 +1,217 @@
+.container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header {
+    border-bottom: 2.3px solid #efecec;
+}
+
+.navbar {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: white;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
+    
+}
+
+.il {
+    display: block;;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    float: left;
+  }
+
+.il {
+    font-family: 'Proxima Nova', sans-serif; 
+    font-weight: bold; 
+}
+
+.heart-icon {
+   padding-right: 2px;
+   padding-left: 30px;
+}
+
+.search-icon {
+    padding-left: 2px;
+}
+
+.menu-icon {
+    padding-left: 0;
+    padding-right: 2px;
+}
+
+.hover-blue:hover {
+    color: #007bff; 
+}
+
+
+.buzzfeed-logo {
+    color: #EE3322;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-top: 8px;
+}
+
+.circles-menu {
+    width: 140px;
+    height: 50px;
+    padding-top: 0;
+    padding-bottom: 1%;
+}
+
+.circles-menu:hover {
+    cursor: pointer;
+}
+
+.news-main {
+    width: 700px;
+    height: 290px;
+}
+
+.dogs-pic {
+    padding-top: 3.5%;
+    padding-bottom: 2%;
+}
+
+.dogs-text {
+    font-family: 'Proxima Nova', sans-serif; 
+    font-weight: bolder;
+    font-size: 45px;
+    width: fit-content;
+    margin: auto;
+    line-height: 1.1;
+}
+
+.dogs-text:hover {
+    cursor: pointer;
+    color: #0a6cd5; 
+}
+
+.first-content {
+    display: flex;
+    flex-direction: row;
+    margin-right: 9%;
+    margin-left: 9%;
+    margin-top: 9px;
+    overflow: hidden;
+}
+
+.left-content {
+    height: 550px;
+    overflow: hidden;
+}
+
+.right-content {
+    position: relative;
+    width: 360px;
+    height: 495px;
+    /*box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);*/
+    margin-top: 28px;
+    margin-left: 35px;
+    border: 2px solid black;
+    box-shadow: 18px 18px 10px yellow;
+}
+
+.right-gallery {
+    margin: 0;
+    padding-left: 4%;
+    margin-left: 2.5%;
+    padding-top: 6.6%;
+    padding-bottom: 4.5%;
+    border-bottom: 1px solid #ccc;
+    width: 325px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+.img-t:hover {
+    cursor: pointer;
+}
+  
+.img-b:hover {
+    cursor: pointer;
+}
+  
+.desc {
+   padding: 10px;
+   padding-top: 0;
+   text-align: left;
+   font-family: 'Proxima Nova', sans-serif; 
+   font-weight: bolder;
+}
+
+.desc:hover {
+    color: #0a6cd5; 
+    cursor: pointer;
+}
+
+div.second-content {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 9%;
+    margin-left: 9%;
+}
+
+div.bottom-gallery {
+    margin: 10px;
+    float: left;
+    width: 255px;
+    height: auto;
+  }
+  
+  
+  div.bottom-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.category {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight:bold;
+    font-size: small;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .bottom-content {
+    height: 350px;
+    width: 700px;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .bottom-desc {
+    padding: 0;
+    padding-top: 0;
+    text-align: left;
+    font-family: 'Proxima Nova', sans-serif; 
+    font-weight: bolder;
+  }
+
+  .bottom-desc:hover {
+    cursor: pointer;
+    color: #0a6cd5;
+  }
+
+  .absolute-text {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight:bold;
+    position: absolute;
+    background-color: white;
+    top: -28px;
+    left: 16px;
+    padding: 1%;
+    font-size: 30px;
+  }
