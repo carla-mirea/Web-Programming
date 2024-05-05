@@ -1,0 +1,64 @@
+<div class="crud">
+    <section style="float: left; display: inline;">
+      <br>
+      <table class="all-books">
+        <thead>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>AUTHOR</th>
+        <th>PAGES</th>
+        <th>GENRE</th>
+        <th> </th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let bk of books">
+          <td>{{bk.id}}</td>
+          <td>{{bk.title}}</td>
+          <td>{{bk.author}}</td>
+          <td>{{bk.pages}}</td>
+          <td>{{bk.genre}}</td>
+          <td>
+            <button class='btnUpdate' type='button' (click)="onUpdate(bk)">Update</button>
+            <button class='btnDelete' type='button' (click)="onDelete(bk.id)">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <p> </p>
+      <br>
+    </section>
+  
+    <section id="add_form" style="float: left; display: block; padding-left: 50px; padding-top: 12px">
+      <form action="" method="get">
+        <input id="id1" type="text" #newID placeholder="id" style="margin: 5px; width: 191px;">
+        ID<br> 
+        <input id="title1" type="text" #newTitle placeholder="title" style="margin: 5px; width: 191px">
+        Title<br>
+        <input id="author1" type="text" #newAuthor placeholder="author" style="margin: 5px; width: 191px">
+        Author<br>
+        <input id="pages1" type="text" #newPages placeholder="pages" style="margin: 5px; width: 191px">
+        Pages<br>
+        <input id="genre1" type="text" #newGenre placeholder="genre" style="margin: 5px; width: 191px">
+        Genre<br>
+        <button id="submitAddBtn" style="margin-top: 10px" (click)="addBook(newID,newTitle,newAuthor,newPages,newGenre)">
+          Add new book</button>
+      </form>
+    </section>
+  
+    <section id="update_form" style="float: left; display: none; padding-left: 50px; padding-top: 12px">
+      <form action="" method="get">
+        <input id="id2" type="text" #uID placeholder="id" readonly style="margin: 5px; width: 191px">
+        ID<br>
+        <input id="title2" type="text" #uTitle placeholder="title" style="margin: 5px; width: 191px">
+        Title<br>
+        <input id="author2" type="text" #uAuthor placeholder="author" style="margin: 5px; width: 191px">
+        Author<br>
+        <input id="pages2" type="text" #uPages placeholder="pages" style="margin: 5px; width: 191px">
+        Pages<br>
+        <input id="genre2" type="text" #uGenre placeholder="genre" style="margin: 5px; width: 191px">
+        Genre<br>
+        <button id="submitUpdateBtn" style="margin-top: 10px" (click)="updateBook(uID,uTitle,uAuthor,uPages,uGenre)">
+          Update</button>
+      </form>
+    </section>
+</div>

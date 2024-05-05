@@ -1,0 +1,35 @@
+<section class="browsing">
+    <label>
+      <select name="Severity Filter" [(ngModel)]="selectedOption" (change)="getFilteredBooksByGenre()">
+        <option class = "genre-filter" selected>Choose genre</option>
+        <option *ngFor="let genre of genres">
+            {{genre}}
+        </option>
+      </select>
+    </label>
+    
+    <br><br>
+    <table>
+      <thead>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Pages</th>
+      <th>Genre</th>
+      </thead>
+      <tbody>
+        
+        <tr *ngFor="let bk of filteredBks">
+        <td>{{bk.id}}</td>
+        <td>{{bk.title}}</td>
+        <td>{{bk.author}}</td>
+        <td>{{bk.pages}}</td>
+        <td>{{bk.genre}}</td>
+        </tr>
+        
+      
+      </tbody>
+    </table>
+    <p *ngIf="prevOption"> Previous books filter with genre: {{prevOption}} </p>
+    <br>
+</section>
